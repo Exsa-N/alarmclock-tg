@@ -1,0 +1,29 @@
+{
+  "admin": {
+    "name": "ExsaNik",
+    "id": 342192414
+  },
+  "user": {
+    "354586293": {
+      "name": "DmiTurkin",
+      "id": 354586293,
+      "queue": [],
+      "alarm": [
+        {
+          "hour": 20,
+          "minute": 30
+        },
+        {
+          "hour": 18,
+          "minute": 38
+        }
+      ],
+      "active": true,
+      "repeat": 8,
+      "interval": 5000,
+      "lang": "ru",
+      "timezone": "utc+03:00",
+      "location": "49.951709:36.123034"
+    }
+  }
+}
