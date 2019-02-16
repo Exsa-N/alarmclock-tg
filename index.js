@@ -129,6 +129,7 @@ function restartAllIntervals(queueBackup)
 {
     if(queueBackup)
     {
+        clearAllIntervals();
         for(let i = 0; i < queueBackup.length; i++)
         {
             let tz = db.get(`user.${queueBackup[i].id}.timezone`).value();
@@ -153,6 +154,7 @@ function restartAllIntervals(queueBackup)
 function restartIntervalsForId(chatId)
 {
     let queueBackup = db.get(`user.${chatId}.queue`).map( el => {el.id = chatId; return el}).value();
+    clearIntervalsForId(chatId);
     restartAllIntervals(queueBackup);
 }
 function runWithStart()
