@@ -27,6 +27,14 @@
             "queue": [],
             "alarm": [
                 {
+                    "hour": 20,
+                    "minute": 36
+                },
+                {
+                    "hour": 20,
+                    "minute": 29
+                },
+                {
                     "hour": 19,
                     "minute": 7
                 },
@@ -59,9 +67,10 @@
             "id": 354586293,
             "queue": [
                 {
-                    "ms": 82920000,
+                    "ms": 77820000,
                     "hour": 19,
-                    "minute": 5
+                    "minute": 5,
+                    "id": "354586293"
                 }
             ],
             "alarm": [
@@ -107,6 +116,29 @@
             "interval": 1500,
             "lang": "ru",
             "timezone": "noZone",
+            "location": "noLocation"
+        },
+        "429038506": {
+            "name": "Katrina Gureva",
+            "id": 429038506,
+            "queue": [
+                {
+                    "ms": 54420000,
+                    "hour": 7,
+                    "minute": 30
+                }
+            ],
+            "alarm": [
+                {
+                    "hour": 7,
+                    "minute": 30
+                }
+            ],
+            "active": true,
+            "repeat": 7,
+            "interval": 1500,
+            "lang": "ru",
+            "timezone": "utc+02:00",
             "location": "noLocation"
         }
     }
