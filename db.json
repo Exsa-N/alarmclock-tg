@@ -1,29 +1,113 @@
 {
-  "admin": {
-    "name": "ExsaNik",
-    "id": 342192414
-  },
-  "user": {
-    "354586293": {
-      "name": "DmiTurkin",
-      "id": 354586293,
-      "queue": [],
-      "alarm": [
-        {
-          "hour": 20,
-          "minute": 30
+    "admin": {
+        "name": "ExsaNik",
+        "id": 342192414
+    },
+    "user": {
+        "322087702": {
+            "name": "Jesussssssssssss",
+            "id": 322087702,
+            "queue": [],
+            "alarm": [
+                {
+                    "hour": 15,
+                    "minute": 33
+                }
+            ],
+            "active": true,
+            "repeat": 20,
+            "interval": 1500,
+            "lang": "ru",
+            "timezone": "Europe/Kiev",
+            "location": "49.932669:36.4313"
         },
-        {
-          "hour": 18,
-          "minute": 38
+        "342192414": {
+            "name": "ExsaNik",
+            "id": 342192414,
+            "queue": [],
+            "alarm": [
+                {
+                    "hour": 19,
+                    "minute": 7
+                },
+                {
+                    "hour": 2,
+                    "minute": 48
+                },
+                {
+                    "hour": 16,
+                    "minute": 34
+                },
+                {
+                    "hour": 23,
+                    "minute": 30
+                },
+                {
+                    "hour": 21,
+                    "minute": 10
+                }
+            ],
+            "active": true,
+            "repeat": 7,
+            "interval": 1500,
+            "lang": "en",
+            "timezone": "Europe/Kiev",
+            "location": "49.952005:36.12323"
+        },
+        "354586293": {
+            "name": "DmiTurkin",
+            "id": 354586293,
+            "queue": [
+                {
+                    "ms": 82920000,
+                    "hour": 19,
+                    "minute": 5
+                }
+            ],
+            "alarm": [
+                {
+                    "hour": 19,
+                    "minute": 5
+                },
+                {
+                    "hour": 20,
+                    "minute": 30
+                },
+                {
+                    "hour": 18,
+                    "minute": 38
+                }
+            ],
+            "active": true,
+            "repeat": 8,
+            "interval": 5000,
+            "lang": "ru",
+            "timezone": "utc+03:00",
+            "location": "49.951709:36.123034"
+        },
+        "380094635": {
+            "name": "retnif",
+            "id": 380094635,
+            "queue": [],
+            "alarm": [],
+            "active": true,
+            "repeat": 7,
+            "interval": 1500,
+            "lang": "ru",
+            "timezone": "utc+02:00",
+            "location": "noLocation"
+        },
+        "406581491": {
+            "name": ". undefined",
+            "id": 406581491,
+            "queue": [],
+            "alarm": [],
+            "active": true,
+            "repeat": 7,
+            "interval": 1500,
+            "lang": "ru",
+            "timezone": "noZone",
+            "location": "noLocation"
         }
-      ],
-      "active": true,
-      "repeat": 8,
-      "interval": 5000,
-      "lang": "ru",
-      "timezone": "utc+03:00",
-      "location": "49.951709:36.123034"
     }
-  }
 }
