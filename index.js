@@ -115,7 +115,7 @@ function clearIntervalsForId(chatId)
         len = timers[chatId].length;
 
     for(let i = 0; i < len; i++)
-        clearInterval(timers[chatId][i]);
+        clearTimeout(timers[chatId][i]);
     timers[chatId] = [];
 }
 function clearAllIntervals()
