@@ -837,6 +837,5 @@ bot.onText(/\/timezone/, msg => {
 
 bot.onText(/\/log/, msg => {
     let id = db.get('admin.id').value();
-    let data = db.value();
-    bot.sendMessage(id, debug(data)); 
+    bot.sendDocument(id, './db.json');
 })
