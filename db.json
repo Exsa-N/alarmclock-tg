@@ -21,11 +21,48 @@
       "timezone": "Europe/Kiev",
       "location": "49.932669:36.4313"
     },
+    "333876887": {
+      "name": "d_rina",
+      "id": 333876887,
+      "queue": [
+        {
+          "ms": 22320000,
+          "hour": 6,
+          "minute": 0
+        }
+      ],
+      "alarm": [
+        {
+          "hour": 6,
+          "minute": 0
+        }
+      ],
+      "active": true,
+      "repeat": 3,
+      "interval": 2500,
+      "lang": "ru",
+      "timezone": "utc+02:00",
+      "location": "noLocation"
+    },
     "342192414": {
       "name": "ExsaNik",
       "id": 342192414,
-      "queue": [],
+      "queue": [
+        {
+          "ms": 86220000,
+          "hour": 17,
+          "minute": 0
+        }
+      ],
       "alarm": [
+        {
+          "hour": 18,
+          "minute": 0
+        },
+        {
+          "hour": 17,
+          "minute": 0
+        },
         {
           "hour": 20,
           "minute": 36
@@ -65,14 +102,7 @@
     "354586293": {
       "name": "DmiTurkin",
       "id": 354586293,
-      "queue": [
-        {
-          "ms": 8160000,
-          "hour": 19,
-          "minute": 5,
-          "id": "354586293"
-        }
-      ],
+      "queue": [],
       "alarm": [
         {
           "hour": 19,
