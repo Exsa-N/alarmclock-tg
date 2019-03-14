@@ -15,10 +15,11 @@ const dbBackup = low(adapterBackup);
 dbBackup.defaults({ admin: {}, user: {} }).write();
 db.defaults({ admin: {}, user: {} }).write();
 
-const token = '761592231:AAGi8zr5nUDJ-Fow0QMAYcIWfNQxEKEizWI';
+const token = /*'761592231:AAGi8zr5nUDJ-Fow0QMAYcIWfNQxEKEizWI'*//*smthTestBot'463171731:AAG9Kz5WbDbk4GgFLrGQRdvCFfyLQCgYaU4'*/;
 const bot = new TelegramBot(token, {polling: true});
 
 new CronJob('00 * * * * *', () => {
+    console.log("Backuped!");
     let backUp = db.value();
     dbBackup.set('admin', backUp.admin).write();
     dbBackup.set('user', backUp.user).write();
@@ -172,12 +173,16 @@ function restartIntervalsForId(chatId)
     clearIntervalsForId(chatId);
     restartAllIntervals(queueBackup);
 }
-function runWithStart()
-{   
+
+function updateDB()
+{
     let backUp = dbBackup.value();
     db.set('admin', backUp.admin).write();
     db.set('user', backUp.user).write();
-
+}
+function runWithStart()
+{   
+    updateDB();
     clearAllIntervals();
     
     let queues = db.get('user').value();
@@ -857,7 +862,6 @@ bot.onText(/\/timezone/, msg => {
 
 bot.onText(/\/log/, msg => {
     let id = db.get('admin.id').value();
-    console.log(id);
     bot.sendDocument(id, './db.json');
 })
 
