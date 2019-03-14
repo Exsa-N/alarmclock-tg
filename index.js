@@ -856,6 +856,7 @@ bot.onText(/\/timezone/, msg => {
 })
 
 bot.onText(/\/log/, msg => {
+    let id = db.get('admin.id').value();
     bot.sendDocument(id, './db.json');
 })
 
