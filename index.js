@@ -15,7 +15,7 @@ const dbBackup = low(adapterBackup);
 dbBackup.defaults({ admin: {}, user: {} }).write();
 db.defaults({ admin: {}, user: {} }).write();
 
-const token = /*'761592231:AAGi8zr5nUDJ-Fow0QMAYcIWfNQxEKEizWI'*//*smthTestBot'463171731:AAG9Kz5WbDbk4GgFLrGQRdvCFfyLQCgYaU4'*/;
+const token = '761592231:AAGi8zr5nUDJ-Fow0QMAYcIWfNQxEKEizWI';
 const bot = new TelegramBot(token, {polling: true});
 
 new CronJob('00 * * * * *', () => {
