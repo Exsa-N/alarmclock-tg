@@ -2,15 +2,30 @@ const TelegramBot = require('node-telegram-bot-api');
 const low = require('lowdb');
 const tzlookup = require("tz-lookup");
 const { DateTime } = require('luxon');
+const CronJob = require('cron').CronJob;
 
 
 const FileSync = require('lowdb/adapters/FileSync');
 const adapter = new FileSync('db.json');
 const db = low(adapter);
+
+const adapterBackup = new FileSync('dbBackup.json');
+const dbBackup = low(adapterBackup);
+
+dbBackup.defaults({ admin: {}, user: {} }).write();
 db.defaults({ admin: {}, user: {} }).write();
 
-const token = '761592231:AAGi8zr5nUDJ-Fow0QMAYcIWfNQxEKEizWI';
+const token = /*'761592231:AAGi8zr5nUDJ-Fow0QMAYcIWfNQxEKEizWI'*/'463171731:AAG9Kz5WbDbk4GgFLrGQRdvCFfyLQCgYaU4';
 const bot = new TelegramBot(token, {polling: true});
+
+new CronJob('00 * * * * *', () => {
+    let backUp = db.value();
+    dbBackup.set('admin', backUp.admin).write();
+    dbBackup.set('user', backUp.user).write();
+}, null, true, 'Europe/Kiev');
+
+//backUp db each minute with cron
+//Add work with groups
 
 let langPack = {
     en: {
@@ -159,6 +174,10 @@ function restartIntervalsForId(chatId)
 }
 function runWithStart()
 {   
+    let backUp = dbBackup.value();
+    db.set('admin', backUp.admin).write();
+    db.set('user', backUp.user).write();
+
     clearAllIntervals();
     
     let queues = db.get('user').value();
@@ -170,7 +189,8 @@ function runWithStart()
             queueBackup = queueBackup.concat(temp);
         }
     }
-    restartAllIntervals(queueBackup)
+    restartAllIntervals(queueBackup);
+    
 
 }runWithStart();
 
@@ -836,6 +856,12 @@ bot.onText(/\/timezone/, msg => {
 })
 
 bot.onText(/\/log/, msg => {
-    let id = db.get('admin.id').value();
     bot.sendDocument(id, './db.json');
+})
+
+bot.onText(/\/backup/, msg => {
+    let backUp = db.value();
+    console.log(backUp);
+    dbBackup.set('admin', backUp.admin).write();
+    dbBackup.set('user', backUp.user).write();
 })
