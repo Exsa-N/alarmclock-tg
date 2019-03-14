@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "cron": "^1.7.0",
     "lowdb": "^1.0.0",
     "luxon": "^1.11.2",
     "node-telegram-bot-api": "^0.30.0",
