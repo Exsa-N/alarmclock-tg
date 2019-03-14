@@ -1,1 +1,205 @@
-
+{
+  "admin": {
+    "name": "ExsaNik",
+    "id": 342192414
+  },
+  "user": {
+    "61306659": {
+      "name": "AndreaDiBartoloo",
+      "id": 61306659,
+      "queue": [],
+      "alarm": [
+        {
+          "hour": 22,
+          "minute": 41
+        }
+      ],
+      "active": true,
+      "repeat": 7,
+      "interval": 1500,
+      "lang": "en",
+      "timezone": "utc+01:00",
+      "location": "37.663328:15.13323"
+    },
+    "322087702": {
+      "name": "Jesussssssssssss",
+      "id": 322087702,
+      "queue": [],
+      "alarm": [
+        {
+          "hour": 15,
+          "minute": 33
+        }
+      ],
+      "active": true,
+      "repeat": 20,
+      "interval": 1500,
+      "lang": "ru",
+      "timezone": "Europe/Kiev",
+      "location": "49.932669:36.4313"
+    },
+    "333876887": {
+      "name": "d_rina",
+      "id": 333876887,
+      "queue": [],
+      "alarm": [
+        {
+          "hour": 6,
+          "minute": 0
+        }
+      ],
+      "active": true,
+      "repeat": 3,
+      "interval": 2500,
+      "lang": "ru",
+      "timezone": "utc+02:00",
+      "location": "noLocation"
+    },
+    "342192414": {
+      "name": "ExsaNik",
+      "id": 342192414,
+      "queue": [
+        {
+          "ms": 79680000,
+          "hour": 17,
+          "minute": 0,
+          "id": "342192414"
+        }
+      ],
+      "alarm": [
+        {
+          "hour": 18,
+          "minute": 0
+        },
+        {
+          "hour": 17,
+          "minute": 0
+        },
+        {
+          "hour": 20,
+          "minute": 36
+        },
+        {
+          "hour": 20,
+          "minute": 29
+        },
+        {
+          "hour": 19,
+          "minute": 7
+        },
+        {
+          "hour": 2,
+          "minute": 48
+        },
+        {
+          "hour": 16,
+          "minute": 34
+        },
+        {
+          "hour": 23,
+          "minute": 30
+        },
+        {
+          "hour": 21,
+          "minute": 10
+        }
+      ],
+      "active": true,
+      "repeat": 7,
+      "interval": 1500,
+      "lang": "en",
+      "timezone": "Europe/Kiev",
+      "location": "49.952005:36.12323"
+    },
+    "354586293": {
+      "name": "DmiTurkin",
+      "id": 354586293,
+      "queue": [],
+      "alarm": [
+        {
+          "hour": 19,
+          "minute": 5
+        },
+        {
+          "hour": 20,
+          "minute": 30
+        },
+        {
+          "hour": 18,
+          "minute": 38
+        }
+      ],
+      "active": true,
+      "repeat": 8,
+      "interval": 5000,
+      "lang": "ru",
+      "timezone": "utc+03:00",
+      "location": "49.951709:36.123034"
+    },
+    "380094635": {
+      "name": "retnif",
+      "id": 380094635,
+      "queue": [],
+      "alarm": [],
+      "active": true,
+      "repeat": 7,
+      "interval": 1500,
+      "lang": "ru",
+      "timezone": "utc+02:00",
+      "location": "noLocation"
+    },
+    "406581491": {
+      "name": ". undefined",
+      "id": 406581491,
+      "queue": [],
+      "alarm": [],
+      "active": true,
+      "repeat": 7,
+      "interval": 1500,
+      "lang": "ru",
+      "timezone": "noZone",
+      "location": "noLocation"
+    },
+    "429038506": {
+      "name": "Katrina Gureva",
+      "id": 429038506,
+      "queue": [],
+      "alarm": [
+        {
+          "hour": 7,
+          "minute": 30
+        }
+      ],
+      "active": true,
+      "repeat": 7,
+      "interval": 1500,
+      "lang": "ru",
+      "timezone": "utc+02:00",
+      "location": "noLocation"
+    },
+    "545068762": {
+      "name": "OlyaTurkina",
+      "id": 545068762,
+      "queue": [],
+      "alarm": [],
+      "active": true,
+      "repeat": 7,
+      "interval": 1500,
+      "lang": "ru",
+      "timezone": "Europe/Kiev",
+      "location": "49.953837:36.124797"
+    },
+    "659069526": {
+      "name": "sophia ♡",
+      "id": 659069526,
+      "queue": [],
+      "alarm": [],
+      "active": true,
+      "repeat": 7,
+      "interval": 1500,
+      "lang": "en",
+      "timezone": "noZone",
+      "location": "noLocation"
+    }
+  }
+}
